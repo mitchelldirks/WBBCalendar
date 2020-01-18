@@ -4,6 +4,10 @@
 	}elseif (date("m")==4 or date("m")==6 or date("m")==9 or date("m")==11) {
 		$length=30;
 	}elseif (date("m")==2) {
-		$length=28;
+		if (date("y")%4==0) {
+			$length=29;
+		}else{
+			$length=28;
+		}
 	}
 ?>
